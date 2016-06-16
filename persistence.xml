@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="test">
+		<class>model.Biathlete</class>
+		<class>model.Race</class>
+		<class>model.Results</class>
+		<class>model.General</class>
+		<class>model.Medals</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/Practise1" />
+			<property name="javax.persistence.jdbc.user" value="postgres" />
+			<property name="javax.persistence.jdbc.password" value="5432" />
+			<property name="javax.persistence.jdbc.createDatabaseIfNotExist" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
